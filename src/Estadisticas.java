@@ -57,6 +57,8 @@ public class Estadisticas {
             nombre_p1_est = personaje1.getNombre();
         } else if (personaje1.getClase_elegida()==false && personaje1.getPersonaje_seleccionado() == true) {
             nombre_p1_est =personaje1.getNombre() + color.grey +"\t --Primero tienes que elegir una clase--"+color.reset;
+        }else if (personaje1.getClase_elegida() && personaje1.getPersonaje_seleccionado() == false) {
+            nombre_p1_est =personaje1.getNombre() + color.grey +"\t --Primero tienes que elegir una clase--"+color.reset;
         }
         if (personaje2.getClase_elegida()==true) {
             nombre_p2_est = personaje2.getNombre();

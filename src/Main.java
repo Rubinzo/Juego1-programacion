@@ -2,7 +2,7 @@ import java.awt.*;
 import java.sql.Time;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
-
+//Version 1.2 antes de traspaso 2
 public class Main {
 //    personajes = [{"mon",68,89,90,90},{"mon",68,89,90,90}]
 
@@ -68,7 +68,8 @@ public class Main {
                         } else if (n == 3) {
                             break;
                         } else {
-                            System.out.println(color.red + "Introduce un número del 1-2" + color.reset);
+                            System.out.println(color.red + "Introduce un número del 1-3" + color.reset);
+                            tiempo();
                             continue;
                         }
                     case 3:
@@ -87,6 +88,11 @@ public class Main {
                         break;
                     case 10:
                         flag = false;
+                        break;
+
+                    default:
+                        System.out.println(color.red + "Introduce un número del 1-10" + color.reset);
+                        tiempo();
                         break;
 
                 }
